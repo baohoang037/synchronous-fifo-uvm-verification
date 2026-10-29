@@ -1,0 +1,25 @@
+# Simulator build artifacts
+work/
+transcript
+*.wlf
+*.log
+*.dbg
+vsim.wlf
+*.so
+export_tramp.so
+
+# Coverage binary databases
+*.ucdb
+sim/coverage/*.ucdb
+
+# Temporary directories
+sim/work/
+sim/log/
+sim/tr_db.log
+sim/transcript
+sim/modelsim.ini
+
+# OS generated files
+.DS_Store
+*~
+*.swp
