@@ -1,0 +1,412 @@
+# vsim -L uvm -dpicpppath /usr/bin/gcc -coverage -l sim.log -c tb_fifo_sync -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit coverage.ucdb; log -r /*; run -all; quit" 
+# Start time: 21:36:40 on Oct 29,2026
+# Loading /tmp/bao@bao-XPS-13-9300_dpi_59481/linux_x86_64_gcc-15/export_tramp.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_fifo_if(fast)
+# Loading uvm.uvm_pkg(fast)
+# Loading work.tb_fifo_sync_pkg(fast)
+# Loading uvm.questa_uvm_pkg(fast)
+# Loading work.tb_fifo_sync(fast)
+# Loading work.fifo_sync(fast)
+# Compiling /tmp/bao@bao-XPS-13-9300_dpi_59481/linux_x86_64_gcc-15/exportwrapper.c
+# Loading /tmp/bao@bao-XPS-13-9300_dpi_59481/linux_x86_64_gcc-15/vsim_auto_compile.so
+# Loading /usr/local/questasim/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# coverage save -onexit coverage.ucdb
+#  log -r /*
+#  run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test tb_fifo_test...
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 55001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 65001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 75001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 85001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 85001: uvm_test_top.env.sco [SCO] WRITE: din=a5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 95001: uvm_test_top.env.sco [SCO] READ PASS: dout=a5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 105001: uvm_test_top.env.sco [SCO] WRITE: din=00
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 115001: uvm_test_top.env.sco [SCO] WRITE: din=ff
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 125001: uvm_test_top.env.sco [SCO] WRITE: din=55
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 135001: uvm_test_top.env.sco [SCO] WRITE: din=aa
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 145001: uvm_test_top.env.sco [SCO] WRITE: din=0f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 155001: uvm_test_top.env.sco [SCO] WRITE: din=f0
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 165001: uvm_test_top.env.sco [SCO] WRITE: din=3c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 175001: uvm_test_top.env.sco [SCO] WRITE: din=c3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 185001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 195001: uvm_test_top.env.sco [SCO] READ PASS: dout=00
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 195001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 205001: uvm_test_top.env.sco [SCO] READ PASS: dout=ff
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 205001: uvm_test_top.env.sco [SCO] WRITE: din=a8
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 215001: uvm_test_top.env.sco [SCO] READ PASS: dout=55
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 215001: uvm_test_top.env.sco [SCO] WRITE: din=8a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 225001: uvm_test_top.env.sco [SCO] READ PASS: dout=aa
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 225001: uvm_test_top.env.sco [SCO] WRITE: din=88
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 235001: uvm_test_top.env.sco [SCO] READ PASS: dout=0f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 235001: uvm_test_top.env.sco [SCO] WRITE: din=f1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 245001: uvm_test_top.env.sco [SCO] READ PASS: dout=f0
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 245001: uvm_test_top.env.sco [SCO] WRITE: din=6c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 255001: uvm_test_top.env.sco [SCO] READ PASS: dout=3c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 255001: uvm_test_top.env.sco [SCO] WRITE: din=b5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 265001: uvm_test_top.env.sco [SCO] READ PASS: dout=c3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 265001: uvm_test_top.env.sco [SCO] WRITE: din=87
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 275001: uvm_test_top.env.sco [SCO] READ PASS: dout=a8
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 275001: uvm_test_top.env.sco [SCO] WRITE: din=a5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 285001: uvm_test_top.env.sco [SCO] READ PASS: dout=8a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 285001: uvm_test_top.env.sco [SCO] WRITE: din=47
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 295001: uvm_test_top.env.sco [SCO] READ PASS: dout=88
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 295001: uvm_test_top.env.sco [SCO] WRITE: din=09
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 305001: uvm_test_top.env.sco [SCO] READ PASS: dout=f1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 305001: uvm_test_top.env.sco [SCO] WRITE: din=6f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 315001: uvm_test_top.env.sco [SCO] READ PASS: dout=6c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 315001: uvm_test_top.env.sco [SCO] WRITE: din=07
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 325001: uvm_test_top.env.sco [SCO] READ PASS: dout=b5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 325001: uvm_test_top.env.sco [SCO] WRITE: din=e1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 335001: uvm_test_top.env.sco [SCO] READ PASS: dout=87
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 335001: uvm_test_top.env.sco [SCO] WRITE: din=49
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 345001: uvm_test_top.env.sco [SCO] READ PASS: dout=a5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 345001: uvm_test_top.env.sco [SCO] WRITE: din=85
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 355001: uvm_test_top.env.sco [SCO] READ PASS: dout=47
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 355001: uvm_test_top.env.sco [SCO] WRITE: din=10
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 365001: uvm_test_top.env.sco [SCO] READ PASS: dout=09
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 365001: uvm_test_top.env.sco [SCO] WRITE: din=b9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 375001: uvm_test_top.env.sco [SCO] READ PASS: dout=6f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 375001: uvm_test_top.env.sco [SCO] WRITE: din=ae
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 385001: uvm_test_top.env.sco [SCO] READ PASS: dout=07
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 385001: uvm_test_top.env.sco [SCO] WRITE: din=1f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 395001: uvm_test_top.env.sco [SCO] READ PASS: dout=e1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 395001: uvm_test_top.env.sco [SCO] WRITE: din=43
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 405001: uvm_test_top.env.sco [SCO] READ PASS: dout=49
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 415001: uvm_test_top.env.sco [SCO] READ PASS: dout=85
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 425001: uvm_test_top.env.sco [SCO] READ PASS: dout=10
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 435001: uvm_test_top.env.sco [SCO] READ PASS: dout=b9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 445001: uvm_test_top.env.sco [SCO] READ PASS: dout=ae
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 455001: uvm_test_top.env.sco [SCO] READ PASS: dout=1f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 465001: uvm_test_top.env.sco [SCO] READ PASS: dout=43
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 475001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 485001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 495001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 505001: uvm_test_top.env.sco [SCO] WRITE: din=3f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 515001: uvm_test_top.env.sco [SCO] WRITE: din=c3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 525001: uvm_test_top.env.sco [SCO] WRITE: din=c5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 535001: uvm_test_top.env.sco [SCO] WRITE: din=98
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 595001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 595001: uvm_test_top.env.sco [SCO] WRITE: din=02
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 605001: uvm_test_top.env.sco [SCO] READ PASS: dout=02
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 605001: uvm_test_top.env.sco [SCO] WRITE: din=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 615001: uvm_test_top.env.sco [SCO] READ PASS: dout=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 655001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 655001: uvm_test_top.env.sco [SCO] WRITE: din=2a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 665001: uvm_test_top.env.sco [SCO] READ PASS: dout=2a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 665001: uvm_test_top.env.sco [SCO] WRITE: din=8a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 685001: uvm_test_top.env.sco [SCO] READ PASS: dout=8a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 695001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 705001: uvm_test_top.env.sco [SCO] WRITE: din=16
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 715001: uvm_test_top.env.sco [SCO] READ PASS: dout=16
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 715001: uvm_test_top.env.sco [SCO] WRITE: din=08
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 725001: uvm_test_top.env.sco [SCO] READ PASS: dout=08
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 735001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 735001: uvm_test_top.env.sco [SCO] WRITE: din=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 755001: uvm_test_top.env.sco [SCO] READ PASS: dout=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 755001: uvm_test_top.env.sco [SCO] WRITE: din=88
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 765001: uvm_test_top.env.sco [SCO] READ PASS: dout=88
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 775001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 785001: uvm_test_top.env.sco [SCO] WRITE: din=a6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 805001: uvm_test_top.env.sco [SCO] WRITE: din=d5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 815001: uvm_test_top.env.sco [SCO] WRITE: din=b6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 825001: uvm_test_top.env.sco [SCO] WRITE: din=ac
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 845001: uvm_test_top.env.sco [SCO] WRITE: din=52
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 855001: uvm_test_top.env.sco [SCO] READ PASS: dout=a6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 865001: uvm_test_top.env.sco [SCO] WRITE: din=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 875001: uvm_test_top.env.sco [SCO] READ PASS: dout=d5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 875001: uvm_test_top.env.sco [SCO] WRITE: din=72
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 885001: uvm_test_top.env.sco [SCO] READ PASS: dout=b6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 885001: uvm_test_top.env.sco [SCO] WRITE: din=7a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 895001: uvm_test_top.env.sco [SCO] WRITE: din=09
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 915001: uvm_test_top.env.sco [SCO] READ PASS: dout=ac
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 915001: uvm_test_top.env.sco [SCO] WRITE: din=a9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 925001: uvm_test_top.env.sco [SCO] READ PASS: dout=52
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 935001: uvm_test_top.env.sco [SCO] READ PASS: dout=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 935001: uvm_test_top.env.sco [SCO] WRITE: din=32
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 945001: uvm_test_top.env.sco [SCO] READ PASS: dout=72
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 955001: uvm_test_top.env.sco [SCO] READ PASS: dout=7a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 965001: uvm_test_top.env.sco [SCO] READ PASS: dout=09
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 975001: uvm_test_top.env.sco [SCO] WRITE: din=ba
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 985001: uvm_test_top.env.sco [SCO] READ PASS: dout=a9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 985001: uvm_test_top.env.sco [SCO] WRITE: din=94
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 995001: uvm_test_top.env.sco [SCO] READ PASS: dout=32
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 995001: uvm_test_top.env.sco [SCO] WRITE: din=62
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1005001: uvm_test_top.env.sco [SCO] WRITE: din=1c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1015001: uvm_test_top.env.sco [SCO] READ PASS: dout=ba
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1015001: uvm_test_top.env.sco [SCO] WRITE: din=e7
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1025001: uvm_test_top.env.sco [SCO] READ PASS: dout=94
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1025001: uvm_test_top.env.sco [SCO] WRITE: din=90
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1035001: uvm_test_top.env.sco [SCO] READ PASS: dout=62
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1045001: uvm_test_top.env.sco [SCO] READ PASS: dout=1c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1055001: uvm_test_top.env.sco [SCO] WRITE: din=98
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1065001: uvm_test_top.env.sco [SCO] READ PASS: dout=e7
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1075001: uvm_test_top.env.sco [SCO] READ PASS: dout=90
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1075001: uvm_test_top.env.sco [SCO] WRITE: din=fa
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1085001: uvm_test_top.env.sco [SCO] WRITE: din=21
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1105001: uvm_test_top.env.sco [SCO] READ PASS: dout=98
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1115001: uvm_test_top.env.sco [SCO] READ PASS: dout=fa
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1115001: uvm_test_top.env.sco [SCO] WRITE: din=4b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1125001: uvm_test_top.env.sco [SCO] WRITE: din=30
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1135001: uvm_test_top.env.sco [SCO] WRITE: din=20
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1155001: uvm_test_top.env.sco [SCO] READ PASS: dout=21
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1165001: uvm_test_top.env.sco [SCO] WRITE: din=10
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1175001: uvm_test_top.env.sco [SCO] READ PASS: dout=4b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1175001: uvm_test_top.env.sco [SCO] WRITE: din=cb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1185001: uvm_test_top.env.sco [SCO] WRITE: din=74
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1205001: uvm_test_top.env.sco [SCO] WRITE: din=e0
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1215001: uvm_test_top.env.sco [SCO] READ PASS: dout=30
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1215001: uvm_test_top.env.sco [SCO] WRITE: din=ea
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1225001: uvm_test_top.env.sco [SCO] WRITE: din=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1235001: uvm_test_top.env.sco [SCO] WRITE: din=9c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1245001: uvm_test_top.env.sco [SCO] READ PASS: dout=20
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1255001: uvm_test_top.env.sco [SCO] WRITE: din=93
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 1265001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1275001: uvm_test_top.env.sco [SCO] READ PASS: dout=10
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 1275001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1285001: uvm_test_top.env.sco [SCO] WRITE: din=65
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1295001: uvm_test_top.env.sco [SCO] READ PASS: dout=cb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1325001: uvm_test_top.env.sco [SCO] READ PASS: dout=74
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1345001: uvm_test_top.env.sco [SCO] WRITE: din=cb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1365001: uvm_test_top.env.sco [SCO] WRITE: din=fd
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1375001: uvm_test_top.env.sco [SCO] READ PASS: dout=e0
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 1375001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1385001: uvm_test_top.env.sco [SCO] READ PASS: dout=ea
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1395001: uvm_test_top.env.sco [SCO] READ PASS: dout=75
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1415001: uvm_test_top.env.sco [SCO] READ PASS: dout=9c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1415001: uvm_test_top.env.sco [SCO] WRITE: din=b6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1425001: uvm_test_top.env.sco [SCO] READ PASS: dout=93
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1425001: uvm_test_top.env.sco [SCO] WRITE: din=a6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1455001: uvm_test_top.env.sco [SCO] READ PASS: dout=65
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1455001: uvm_test_top.env.sco [SCO] WRITE: din=2f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1465001: uvm_test_top.env.sco [SCO] WRITE: din=6b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1475001: uvm_test_top.env.sco [SCO] READ PASS: dout=cb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1475001: uvm_test_top.env.sco [SCO] WRITE: din=05
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1485001: uvm_test_top.env.sco [SCO] READ PASS: dout=fd
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1515001: uvm_test_top.env.sco [SCO] READ PASS: dout=b6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1525001: uvm_test_top.env.sco [SCO] READ PASS: dout=a6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1525001: uvm_test_top.env.sco [SCO] WRITE: din=df
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1535001: uvm_test_top.env.sco [SCO] READ PASS: dout=2f
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1535001: uvm_test_top.env.sco [SCO] WRITE: din=ea
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1545001: uvm_test_top.env.sco [SCO] WRITE: din=31
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1555001: uvm_test_top.env.sco [SCO] READ PASS: dout=6b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1565001: uvm_test_top.env.sco [SCO] WRITE: din=72
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1575001: uvm_test_top.env.sco [SCO] READ PASS: dout=05
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1575001: uvm_test_top.env.sco [SCO] WRITE: din=ae
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1585001: uvm_test_top.env.sco [SCO] READ PASS: dout=df
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1595001: uvm_test_top.env.sco [SCO] READ PASS: dout=ea
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1595001: uvm_test_top.env.sco [SCO] WRITE: din=7e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1615001: uvm_test_top.env.sco [SCO] READ PASS: dout=31
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1625001: uvm_test_top.env.sco [SCO] WRITE: din=ff
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1645001: uvm_test_top.env.sco [SCO] WRITE: din=43
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1685001: uvm_test_top.env.sco [SCO] READ PASS: dout=72
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1695001: uvm_test_top.env.sco [SCO] READ PASS: dout=ae
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1705001: uvm_test_top.env.sco [SCO] WRITE: din=49
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1715001: uvm_test_top.env.sco [SCO] READ PASS: dout=7e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1725001: uvm_test_top.env.sco [SCO] READ PASS: dout=ff
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1735001: uvm_test_top.env.sco [SCO] READ PASS: dout=43
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1735001: uvm_test_top.env.sco [SCO] WRITE: din=f7
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1755001: uvm_test_top.env.sco [SCO] READ PASS: dout=49
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1765001: uvm_test_top.env.sco [SCO] READ PASS: dout=f7
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1765001: uvm_test_top.env.sco [SCO] WRITE: din=eb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1775001: uvm_test_top.env.sco [SCO] READ PASS: dout=eb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 1805001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1805001: uvm_test_top.env.sco [SCO] WRITE: din=95
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1815001: uvm_test_top.env.sco [SCO] READ PASS: dout=95
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1815001: uvm_test_top.env.sco [SCO] WRITE: din=14
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1825001: uvm_test_top.env.sco [SCO] READ PASS: dout=14
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1855001: uvm_test_top.env.sco [SCO] WRITE: din=40
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1865001: uvm_test_top.env.sco [SCO] WRITE: din=b1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1885001: uvm_test_top.env.sco [SCO] READ PASS: dout=40
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1905001: uvm_test_top.env.sco [SCO] READ PASS: dout=b1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1925001: uvm_test_top.env.sco [SCO] WRITE: din=cb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1935001: uvm_test_top.env.sco [SCO] WRITE: din=56
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1965001: uvm_test_top.env.sco [SCO] READ PASS: dout=cb
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 1975001: uvm_test_top.env.sco [SCO] READ PASS: dout=56
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 1985001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 1985001: uvm_test_top.env.sco [SCO] WRITE: din=0e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2005001: uvm_test_top.env.sco [SCO] READ PASS: dout=0e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2005001: uvm_test_top.env.sco [SCO] WRITE: din=55
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2015001: uvm_test_top.env.sco [SCO] READ PASS: dout=55
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 2025001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2025001: uvm_test_top.env.sco [SCO] WRITE: din=e8
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2035001: uvm_test_top.env.sco [SCO] READ PASS: dout=e8
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2035001: uvm_test_top.env.sco [SCO] WRITE: din=70
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2045001: uvm_test_top.env.sco [SCO] READ PASS: dout=70
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 2055001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2055001: uvm_test_top.env.sco [SCO] WRITE: din=c2
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2065001: uvm_test_top.env.sco [SCO] WRITE: din=f3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2075001: uvm_test_top.env.sco [SCO] READ PASS: dout=c2
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2075001: uvm_test_top.env.sco [SCO] WRITE: din=f6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2105001: uvm_test_top.env.sco [SCO] WRITE: din=42
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2115001: uvm_test_top.env.sco [SCO] WRITE: din=01
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2135001: uvm_test_top.env.sco [SCO] READ PASS: dout=f3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2135001: uvm_test_top.env.sco [SCO] WRITE: din=90
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2175001: uvm_test_top.env.sco [SCO] WRITE: din=8e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2185001: uvm_test_top.env.sco [SCO] WRITE: din=15
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2205001: uvm_test_top.env.sco [SCO] READ PASS: dout=f6
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2205001: uvm_test_top.env.sco [SCO] WRITE: din=28
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2225001: uvm_test_top.env.sco [SCO] READ PASS: dout=42
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2225001: uvm_test_top.env.sco [SCO] WRITE: din=2b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2235001: uvm_test_top.env.sco [SCO] WRITE: din=69
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2245001: uvm_test_top.env.sco [SCO] READ PASS: dout=01
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2255001: uvm_test_top.env.sco [SCO] READ PASS: dout=90
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2255001: uvm_test_top.env.sco [SCO] WRITE: din=19
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2275001: uvm_test_top.env.sco [SCO] READ PASS: dout=8e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2275001: uvm_test_top.env.sco [SCO] WRITE: din=e9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2285001: uvm_test_top.env.sco [SCO] READ PASS: dout=15
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2285001: uvm_test_top.env.sco [SCO] WRITE: din=ed
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2295001: uvm_test_top.env.sco [SCO] WRITE: din=4c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2315001: uvm_test_top.env.sco [SCO] READ PASS: dout=28
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2325001: uvm_test_top.env.sco [SCO] WRITE: din=22
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2335001: uvm_test_top.env.sco [SCO] READ PASS: dout=2b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2335001: uvm_test_top.env.sco [SCO] WRITE: din=17
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2345001: uvm_test_top.env.sco [SCO] READ PASS: dout=69
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2345001: uvm_test_top.env.sco [SCO] WRITE: din=b5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2365001: uvm_test_top.env.sco [SCO] WRITE: din=0e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2375001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2385001: uvm_test_top.env.sco [SCO] READ PASS: dout=19
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2395001: uvm_test_top.env.sco [SCO] READ PASS: dout=e9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2395001: uvm_test_top.env.sco [SCO] WRITE: din=a1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2405001: uvm_test_top.env.sco [SCO] READ PASS: dout=ed
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2405001: uvm_test_top.env.sco [SCO] WRITE: din=66
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2415001: uvm_test_top.env.sco [SCO] READ PASS: dout=4c
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2425001: uvm_test_top.env.sco [SCO] READ PASS: dout=22
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2425001: uvm_test_top.env.sco [SCO] WRITE: din=c4
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2435001: uvm_test_top.env.sco [SCO] WRITE: din=f1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2455001: uvm_test_top.env.sco [SCO] READ PASS: dout=17
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2465001: uvm_test_top.env.sco [SCO] READ PASS: dout=b5
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2465001: uvm_test_top.env.sco [SCO] WRITE: din=06
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2475001: uvm_test_top.env.sco [SCO] WRITE: din=ea
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2485001: uvm_test_top.env.sco [SCO] READ PASS: dout=0e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2485001: uvm_test_top.env.sco [SCO] WRITE: din=82
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2495001: uvm_test_top.env.sco [SCO] READ PASS: dout=a1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2495001: uvm_test_top.env.sco [SCO] WRITE: din=09
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2505001: uvm_test_top.env.sco [SCO] READ PASS: dout=66
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2505001: uvm_test_top.env.sco [SCO] WRITE: din=07
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2515001: uvm_test_top.env.sco [SCO] WRITE: din=ae
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2525001: uvm_test_top.env.sco [SCO] READ PASS: dout=c4
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2525001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2535001: uvm_test_top.env.sco [SCO] WRITE: din=b1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2545001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2565001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2575001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2585001: uvm_test_top.env.sco [SCO] READ PASS: dout=f1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2585001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2595001: uvm_test_top.env.sco [SCO] READ PASS: dout=06
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2605001: uvm_test_top.env.sco [SCO] READ PASS: dout=ea
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2605001: uvm_test_top.env.sco [SCO] WRITE: din=42
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2625001: uvm_test_top.env.sco [SCO] READ PASS: dout=82
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2625001: uvm_test_top.env.sco [SCO] WRITE: din=45
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2655001: uvm_test_top.env.sco [SCO] WRITE: din=cf
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2665001: uvm_test_top.env.sco [SCO] WRITE: din=21
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2675001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2685001: uvm_test_top.env.sco [SCO] READ PASS: dout=09
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2685001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2695001: uvm_test_top.env.sco [SCO] WRITE: din=b7
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2705001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2715001: uvm_test_top.env.sco [SCO] READ PASS: dout=07
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2725001: uvm_test_top.env.sco [SCO] READ PASS: dout=ae
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2735001: uvm_test_top.env.sco [SCO] WRITE: din=b9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2745001: uvm_test_top.env.sco [SCO] WRITE: din=7e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2755001: uvm_test_top.env.sco [SCO] READ PASS: dout=b1
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2775001: uvm_test_top.env.sco [SCO] WRITE: din=74
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2785001: uvm_test_top.env.sco [SCO] READ PASS: dout=42
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2785001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2795001: uvm_test_top.env.sco [SCO] READ PASS: dout=45
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2815001: uvm_test_top.env.sco [SCO] READ PASS: dout=cf
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2825001: uvm_test_top.env.sco [SCO] WRITE: din=96
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2835001: uvm_test_top.env.sco [SCO] WRITE: din=8b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2845001: uvm_test_top.env.sco [SCO] READ PASS: dout=21
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2865001: uvm_test_top.env.sco [SCO] READ PASS: dout=b7
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2865001: uvm_test_top.env.sco [SCO] WRITE: din=45
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2885001: uvm_test_top.env.sco [SCO] WRITE: din=c8
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2895001: uvm_test_top.env.sco [SCO] WRITE: din=01
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2905001: uvm_test_top.env.sco [SCO] READ PASS: dout=b9
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2905001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2925001: uvm_test_top.env.sco [SCO] WRITE: din=87
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2935001: uvm_test_top.env.sco [SCO] READ PASS: dout=7e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2945001: uvm_test_top.env.sco [SCO] WRITE: din=d3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(200) @ 2955001: uvm_test_top.env.sco [SCO] WRITE REJECTED: FIFO FULL
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2965001: uvm_test_top.env.sco [SCO] READ PASS: dout=74
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2975001: uvm_test_top.env.sco [SCO] READ PASS: dout=96
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 2975001: uvm_test_top.env.sco [SCO] WRITE: din=5a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2985001: uvm_test_top.env.sco [SCO] READ PASS: dout=8b
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 2995001: uvm_test_top.env.sco [SCO] READ PASS: dout=45
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3005001: uvm_test_top.env.sco [SCO] READ PASS: dout=c8
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 3005001: uvm_test_top.env.sco [SCO] WRITE: din=4e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 3055001: uvm_test_top.env.sco [SCO] WRITE: din=f2
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(186) @ 3065001: uvm_test_top.env.sco [SCO] WRITE: din=57
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3085001: uvm_test_top.env.sco [SCO] READ PASS: dout=01
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3095001: uvm_test_top.env.sco [SCO] READ PASS: dout=87
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3105001: uvm_test_top.env.sco [SCO] READ PASS: dout=d3
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3115001: uvm_test_top.env.sco [SCO] READ PASS: dout=5a
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3125001: uvm_test_top.env.sco [SCO] READ PASS: dout=4e
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3135001: uvm_test_top.env.sco [SCO] READ PASS: dout=f2
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(133) @ 3145001: uvm_test_top.env.sco [SCO] READ PASS: dout=57
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 3155001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 3165001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(164) @ 3175001: uvm_test_top.env.sco [SCO] READ EMPTY PASS
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 3295000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/tb_fifo_scoreboard.sv(258) @ 3295000: uvm_test_top.env.sco [SCO] TEST RESULT: PASS
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 3295000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  338
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]   333
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : /usr/local/questasim/questasim/linux_x86_64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 3295 ns  Iteration: 68  Instance: /tb_fifo_sync
+# Saving coverage database on exit...
+# End time: 21:36:46 on Oct 29,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 1

@@ -65,9 +65,9 @@ The verification testbench uses standard UVM component hierarchy and TLM (Transa
 A critical test scenario happens around timestamp **186.2 ns**:
 * **Initial State:** FIFO is completely full (`count = 8`, `full = 1`).
 * **Input Stimulus:** Both `wr_en = 1` ($din = \text{0xBE}$) and `rd_en = 1` are requested simultaneously.
-* **Hardware Protection:**
-  $$write\_ok = wr\_en \ \&\&\ !full = 1 \ \&\&\ !1 = 0 \quad (\text{Write is REJECTED})$$
-  $$read\_ok = rd\_en \ \&\&\ !empty = 1 \ \&\&\ !0 = 1 \quad (\text{Read is ACCEPTED})$$
+* **Hardware Protection Evaluation:**
+  write_ok = wr_en && !full  = 1 && !1 = 0  --> [Write is REJECTED]
+  read_ok  = rd_en && !empty = 1 && !0 = 1  --> [Read is ACCEPTED]
 * **Result:** The write is dropped to prevent memory corruption. The read succeeds, popping $00$ onto `dout`. The occupancy counter drops from $8 \rightarrow 7$, safely bringing `full` low.
 
 ---

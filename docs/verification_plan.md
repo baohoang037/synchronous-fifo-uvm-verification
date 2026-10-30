@@ -53,8 +53,8 @@ The primary objective of this project is to implement a robust, production-grade
 ### 2.3 Operational Truth Table
 
 Let:
-$$write\_ok = wr\_en \ \&\&\ !full$$
-$$read\_ok = rd\_en \ \&\&\ !empty$$
+  write_ok = wr_en && !full  = 1 && !1 = 0  --> [Write is REJECTED]
+  read_ok  = rd_en && !empty = 1 && !0 = 1  --> [Read is ACCEPTED]
 
 | `rst_n` | `{write_ok, read_ok}` | Hardware Action | Counter Impact | Output `dout` |
 | :---: | :---: | :--- | :---: | :--- |
