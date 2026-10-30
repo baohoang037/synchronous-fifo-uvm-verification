@@ -1,0 +1,61 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /tb_fifo_sync/vif
+=== Design Unit: work.tb_fifo_if
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       4         4         0   100.00%
+    Statements                      12        12         0   100.00%
+    Toggles                         44        44         0   100.00%
+
+=================================================================================
+=== Instance: /tb_fifo_sync/dut
+=== Design Unit: work.fifo_sync
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        12        12         0   100.00%
+    Conditions                       1         1         0   100.00%
+    Expressions                      6         6         0   100.00%
+    Statements                      23        23         0   100.00%
+    Toggles                         68        68         0   100.00%
+
+=================================================================================
+=== Instance: /tb_fifo_sync
+=== Design Unit: work.tb_fifo_sync
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       9         9         0   100.00%
+
+=================================================================================
+=== Instance: /uvm_pkg
+=== Design Unit: uvm.uvm_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       1         1         0   100.00%
+
+=================================================================================
+=== Instance: /tb_fifo_sync_pkg
+=== Design Unit: work.tb_fifo_sync_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        84        27        57    32.14%
+    Conditions                      12         0        12     0.00%
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          8        na        na        na
+            Covergroup Bins         20        20         0   100.00%
+    Expressions                      4         4         0   100.00%
+    Statements                     180       122        58    67.77%
+
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 5
+
+Total Coverage By Instance (filtered view): 74.63%
+
